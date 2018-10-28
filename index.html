@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="assets/javascript/game.js"></script>
+      <!-- Added link to the jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <!--Basic html functions-->
@@ -15,14 +17,45 @@
     <h1>Crystals-Collector!</h1>
 
 </div>
- <div>
+ 
+<div  id="directions" class="container">
+    
     <p> You will be given a random nummber at the start of the game </p>
     <p>There are four crystal below. By clicking on a crystal you will add a specific amount of points to your total score</p>
     <p>you win the game by matching your total score to random number, you lose the game if your total score goes abpve the random number</p>
-    <p> The value of each crystal is hidden form ypu until ypu click on it.</p>
-    <p> Each time the game starts, the game wil change values of each crystal</p>
+    <p> The value of each crystal is hidden form you until ypu click on it.</p>
+    <p> Each time the game starts, the game will change values of each crystal</p>
 
- </div>
+</div>
+
+<!--Buttons for Crystals-->
+
+<div class="row">
+    <div class="col-md-12">
+      <div class="card mb-2">
+        <h3 class="card-header">Pick Crystal to Collect</h3>
+        <div class="card-body text-center">
+          <button id="button-1" class="btn btn-danger btn-choice" value="1">
+            <h1>1</h1>
+          </button>
+          <button id="button-2" class="btn btn-danger btn-choice" value="2">
+            <h1>2</h1>
+          </button>
+          <button id="button-3" class="btn btn-danger btn-choice" value="3">
+            <h1>3</h1>
+          </button>
+          <button id="button-4" class="btn btn-danger btn-choice" value="4">
+            <h1>4</h1>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div>
+    
+</div>
 
 
 </body>
